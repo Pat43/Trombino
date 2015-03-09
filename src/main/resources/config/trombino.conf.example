@@ -26,7 +26,7 @@ suffix_salt =
 
 # External data dir
 
-data_dir = /var/lib/openshift/5399f1f94382ece963000297/app-root/data/
+data_dir = /var/lib/openshift/<YOUR OPENSHIFT HASH NUMBER>/app-root/data/
 
 
 # Files inside data dir
