@@ -1,0 +1,279 @@
+ body {
+	background-image:url("../content/bg.jpg");
+    background-size:100%;
+}
+
+/* HEADER */
+
+.header{
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 60%;
+}
+
+#headerTitle {
+    font-size: 30px;
+    color: #A52A2A;
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+	/* ---> Header Controls */
+
+#headerControls{
+
+}
+#headerLogo{
+	height: 120px;
+	margin-bottom: 5px;
+}
+#logoutHeaderDiv{
+	vertical-align: top;
+	margin-left: 25%
+}
+#headerSearch{
+	float:right;
+}
+
+	/* ---> Header Buttons */
+
+#headerButtons{
+	display: flex;	
+}
+
+.headerButton{
+	background-color: #E4CA99;
+	color: white;
+	text-align: center;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	flex-grow:1;
+}
+.headerButtonSelected{
+	background-color: brown;
+	color: white;
+	text-align: center;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	flex-grow:1;
+}
+
+/* FOOTER */
+
+#footer{
+	color: gray;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-style: italic;
+}
+.afooter{
+	color: gray !important;
+	text-decoration: underline !important;
+}
+
+/* CONTENT */
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #A52A2A #A52A2A #A52A2A #A52A2A;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+
+.authSection{
+	margin: 0 auto;
+	padding: 10px;
+	width: 40%;
+	border:1px  solid black;
+	text-align: center;
+	min-width: 250px
+}
+
+.editProfileSection{
+	border: 1px solid black;
+	padding: 5px;
+	overflow:auto;
+}
+
+/* EDIT PROFILE */
+
+.editPhoto{
+	display: inline-block;
+	margin-right: 15px;
+	height:150px;
+}
+
+.editPhoto img{
+	max-height: 100px;
+	max-width: 150px;
+	margin:5px;
+}
+
+
+/* PROFILE */
+
+#title {
+    color: #F00;
+    font-family: "Comic Sans MS",freeserif,sans-serif;
+    font-size: 3em;
+    text-align: center;
+    border: 1px dashed #A52A2A;
+}
+
+#userInfos{
+	max-height: 360px;
+	width : 100%;
+	overflow: auto;
+}
+
+.usertext{
+	display: block;
+	word-wrap: break-word;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#edit_profile_icon{
+	float: right;
+	height: 50px;
+	margin-top: 1px;
+}
+
+#photoDiv {
+    max-height: 360px;
+    float: left;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+#photoDiv #photo{
+	max-height: 300px;
+}
+
+#photoDiv #blouse{
+	max-height: 50px;
+	max-width: 50px;
+}
+
+	/*	---> Assos */
+	
+.assoscontainer{
+	overflow: auto;
+	margin-bottom: 20px;
+}
+
+.asso{
+	float: left;
+	width: 49%;
+	padding: 2px;
+}
+
+.assologo{
+	max-height: 70px;
+	max-width: 30%;
+	float:left;
+}
+
+.assoroles{
+	width: 70%;
+	display: table;
+	height: 70px;
+	float: right;
+}
+.roles{
+	display: table-cell;
+	vertical-align: middle;
+	max-width: 1px;
+	word-wrap: break-word;
+}
+
+
+	/* ---> Commentaires */
+	
+.impair{
+	background-color: #cbb68c;
+	width: 100%;
+	padding: 3px;
+	border-top: black solid 1px;
+	white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+.pair{
+	background-color: #e4ca99;
+	width: 100%;
+	padding: 3px;
+	border-top: black solid 1px;
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+.controls{
+	float:right;
+}
+a.control{
+	color:red;
+	font-weight:bold
+}
+
+#hometitle{
+	font-size: 30px;
+    color: #A52A2A;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 50px;
+}
+
+/* FORMS */
+
+.formlabel{
+	width : 50%;
+	float:left;
+	text-align: left;
+}
+.forminput{
+	width : 30%;
+	margin-left: -9px;
+}
+.forminputLarger{
+	width : 50%;
+	margin-left: -9px;
+}
+
+.bigger{
+	font-size: 1.1em;
+}
+
+/* MISC */
+a{
+	color:black;
+	text-decoration: none;
+}
+a:hover{
+	color:#880000 ;
+}
+.headerButtonSelected:hover{
+	color:#FFFFFF ;
+}

@@ -1,0 +1,2 @@
+#!/bin/sh
+scp ./../../src/main/resources/config/trombino.conf xxxxxxxxxxxxxxxxx@xxxxxxxx-trombino.rhcloud.com:~/app-root/runtime/repo/src/main/resources/config/trombino.conf

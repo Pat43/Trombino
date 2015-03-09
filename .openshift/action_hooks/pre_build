@@ -1,0 +1,5 @@
+mkdir -p $OPENSHIFT_DATA_DIR/assos
+mkdir -p $OPENSHIFT_DATA_DIR/blouses
+mkdir -p $OPENSHIFT_DATA_DIR/photos
+echo "!!! Il est nécéssaire d'uploader le fichier de conf avant de pouvoir pusher l'application. !!!"
+cp $OPENSHIFT_DATA_DIR/config/trombino.conf $OPENSHIFT_REPO_DIR/src/main/resources/config/trombino.conf

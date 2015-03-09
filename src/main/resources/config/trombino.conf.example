@@ -1,0 +1,36 @@
+# email account
+
+email = 
+email_password = 
+
+# smtp
+
+mail_smtp_host = 
+mail_smtp_port = 
+mail_smtp_auth = 
+mail_smtp_starttls_enable = 
+
+# DB
+
+db_host = 
+db_port = 
+db_name = 
+db_username = 
+db_password = 
+
+# Encryption
+
+hash_algo = SHA-256
+prefix_salt = 
+suffix_salt = 
+
+# External data dir
+
+data_dir = /var/lib/openshift/5399f1f94382ece963000297/app-root/data/
+
+
+# Files inside data dir
+
+pictures_dir_1 = photos
+pictures_dir_2 = blouses
+logos_dir = assos

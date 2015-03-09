@@ -1,0 +1,37 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%! String cssClassHome = "headerButton"; %>
+<%! String cssClassProfile = "headerButton"; %>
+<%! String cssClassSearch = "headerButton"; %>
+
+<c:if test="${requestScope.page == 'home'}">
+<%  cssClassHome = "headerButtonSelected"; %>
+</c:if>
+<c:if test="${requestScope.page == 'profile'}">
+<%  cssClassProfile = "headerButtonSelected"; %>
+</c:if>
+<c:if test="${requestScope.page == 'search'}">
+<%  cssClassSearch = "headerButtonSelected"; %>
+</c:if>
+
+<div class='header'>
+		<div id='headerControls'>
+			<a href='${pageContext.request.contextPath}/index'><img id='headerLogo' src='${pageContext.request.contextPath}/img/trombi_logo.png' alt='logo'/></a>
+			<span id="logoutHeaderDiv">
+				<a href='${pageContext.request.contextPath}/auth?logout'><img style='height: 15' src='${pageContext.request.contextPath}/img/logout.png' alt='logout'/></a>
+				<a href='${pageContext.request.contextPath}/profile?member=${sessionScope.user.id}'><b>${sessionScope.user.firstName} ${sessionScope.user.lastName}</b></a>
+			</span>
+			<div id='headerSearch'>
+				<form action='search' method='get'>
+				<input type='text' name='search' id='search' value=''/>
+				<input type='image' style='height: 16' src='${pageContext.request.contextPath}/img/search.png'>
+				</form>
+			</div>
+		</div>
+		
+		<div id='headerButtons'>
+			<a class=<%=cssClassHome%> href='${pageContext.request.contextPath}/index'>Accueil</a>
+			<a class=<%=cssClassProfile%> href='${pageContext.request.contextPath}/profile?member=${sessionScope.user.id}'>Mon profil</a>
+			<a class=<%=cssClassSearch%> href='${pageContext.request.contextPath}/search'>Rechercher</a>
+		</div>
+</div>

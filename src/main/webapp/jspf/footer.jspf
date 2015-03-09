@@ -1,0 +1,3 @@
+<%@ page import = "util.AppConfig" %> 
+
+<div id='footer'>Contact : <a class='afooter' href="mailto:<%= AppConfig.getConfigValue("email") %>"><%= AppConfig.getConfigValue("email") %></a> (bugs, questions, etc...)</div>

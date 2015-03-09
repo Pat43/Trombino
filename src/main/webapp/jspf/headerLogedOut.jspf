@@ -1,0 +1,20 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%! String cssClassAuth = "headerButton"; %>
+<%! String cssClassRegister = "headerButton"; %>
+
+<c:if test="${requestScope.page == 'auth'}">
+<%  cssClassAuth = "headerButtonSelected"; %>
+</c:if>
+<c:if test="${requestScope.page == 'register'}">
+<%  cssClassRegister = "headerButtonSelected"; %>
+</c:if>
+
+<div class='header'>
+<a href='${pageContext.request.contextPath}/index'><img id='headerLogo' src='${pageContext.request.contextPath}/img/trombi_logo.png' alt='logo'/></a>
+<span id='headerTitle'>TROMBINO PROMO 11</span>
+	<div id='headerButtons'>
+		<a class=<%=cssClassAuth%> href='${pageContext.request.contextPath}/auth'>Se connecter</a>
+		<a class=<%=cssClassRegister%> href='${pageContext.request.contextPath}/register'>S'inscrire</a>
+	</div>
+</div>

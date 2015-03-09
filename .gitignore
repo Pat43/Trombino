@@ -1,0 +1,9 @@
+target/
+.settings/
+
+#ignore all the files in config
+src/main/resources/config/*
+
+#except example files
+!src/main/resources/config/trombino.conf.example
+!src/main/resources/config/upload-conf.example
